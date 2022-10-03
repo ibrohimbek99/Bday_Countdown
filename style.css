@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(114, 124, 146, 0.6), rgba(77, 51, 136, 0.2))
+  }
+  
+  ul li {
+    display: inline-block;
+    padding: 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  ul li span {
+    display: block;
+    font-size: 50px;
+    padding-top: 5px;
+    color: rgb(226, 28, 28);
+    font-weight: 600;
+  }
+  
+  ul li span:nth-child(2) {
+    font-size: 20px;
+  }
+  
+  .timer_cntdwn {
+    color: rgb(23, 241, 34);
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+  }
+  
+  .next_year {
+    font-size: 250px;
+    font-weight: 900;
+    color: rgba(245, 152, 13, 0.493);
+  }
+  
+  @media (max-width:768px) {
+    ul li span {
+      font-size: 10vw;
+    }
+  
+    ul li span:nth-child(2) {
+      font-size: 15px;
+    }
+  
+    .next_year {
+      font-size: 40vw;
+      font-weight: 900;
+    }
+  }
